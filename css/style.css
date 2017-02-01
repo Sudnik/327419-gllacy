@@ -1,23 +1,289 @@
 body {
+  font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
-  font-weight: bold;
   font-family: Roboto;
+  color: #ffffff;
 }
 
 .big-header {
+  font-weight: bold;
   font-size: 60px;
   line-height: 60px;
-  color: #ffffff;
-  font-weight: bold;
   font-family: Roboto;
+  color: #ffffff;
 }
 
 .middle-header {
+  font-weight: bold;
   font-size: 35px;
   line-height: 41px;
-  color: #ffffff;
-  font-weight: bold;
   font-family: Roboto;
+  color: #ffffff;
+}
+
+body.green-theme {
+  background-color: #849d8f;
+}
+
+.index-grid-body {
+  min-height: 2416px;
+
+  background: #000000 url("../img/previews/gllacy-index-1200.jpg") no-repeat 50% 0;
+  background-size: 1200px 2416px;
+}
+
+.catalog-grid-body {
+  min-height: 1650px;
+
+  background: #000000 url("../img/previews/gllacy-catalog-1200.jpg") no-repeat 50% 0;
+  background-size: 1200px 1650px;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.clearfix:after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  padding-top: 10px;
+}
+
+header .block-left {
+  float: left;
+  width: 850px;
+  min-height: 105px;
+}
+
+header .block-right {
+  float: right;
+  width: 270px;
+  min-height: 105px;
+
+  text-align: right;
+}
+
+.banner-item .block-right {
+  text-align: right;
+}
+
+.main-header-navigation,
+.main-header-controls-wrapper {
+  min-height: 60px;
+}
+
+.control-wrapper {
+  display: inline-block;
+}
+
+.slider,
+.slider-slides {
+  min-height: 495px;
+}
+
+.slider {
+  position: relative;
+
+  text-align: center;
+}
+
+.slider-control-panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  min-width: 1150px;
+}
+
+.slider-navi {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  min-width: 265px;
+  min-height: 65px;
+
+  text-align: left;
+}
+
+.slider-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  min-width: 1150px;
+  min-height: 65px;
+
+  text-align: center;
+}
+
+.navi-item {
+  display: inline-block;
+}
+
+.navi-item-submenu-wrapper,
+.control-popup,
+#slide-2,
+#slide-3,
+.seo-header {
+  display: none;
+}
+
+.main-header-phone {
+  display: block;
+}
+
+.slider .big-header {
+  position: absolute;
+  top: 50%;
+
+  width: 100%;
+}
+
+.banner-item,
+.news-blog,
+.subscribe-blog {
+  display: inline-block;
+  width: 560px;
+  min-height: 230px;
+  margin-top: 35px;
+  margin-right: 25px;
+}
+
+.banner-item.chocolates,
+.subscribe-blog {
+  margin-right: 0;
+}
+
+.ice-list {
+  margin-top: 20px;
+}
+
+.ice-item {
+  display: inline-block;
+  width: 270px;
+  min-height: 350px;
+  margin-right: 19px;
+  margin-bottom: 5px;
+}
+
+.ice-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.seo-main-header {
+  min-height: 85px;
+  margin-top: 20px;
+}
+
+.seo .first-column {
+  float: left;
+  width: 560px;
+  min-height: 215px;
+  margin-top: 5px;
+}
+
+.seo .second-column {
+  float: right;
+  width: 560px;
+  min-height: 215px;
+  margin-top: 5px;
+}
+
+.map {
+  position: relative;
+
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.interactive-map {
+  min-height: 430px;
+  margin-top: 30px;
+}
+
+.feedback-panel {
+  position: absolute;
+  top: 65px;
+  right: 25px;
+
+  width: 305px;
+  height: 305px;
+}
+
+.main-footer .block-left {
+  float: left;
+  width: 265px;
+  min-height: 100px;
+  margin-right: 25px;
+}
+
+.main-footer .block-center {
+  display: inline-block;
+  width: 570px;
+  min-height: 100px;
+}
+
+.main-footer .block-right {
+  float: right;
+  width: 265px;
+  min-height: 100px;
+  margin-left: 25px;
+}
+
+.footer-links .first-column {
+  display: inline-block;
+  width: 49%;
+  min-height: 100px;
+
+  text-align: right;
+}
+
+.footer-links .secont-column {
+  display: inline-block;
+  width: 49%;
+  min-height: 100px;
+
+  text-align: left;
+}
+
+.feedback-popup {
+  display: none;
+  width: 480px;
+  min-height: 440px;
+}
+
+.page-header {
+  min-height: 70px;
+  margin-top: -20px;
+}
+
+.filters {
+  min-width: 880px;
+  min-height: 170px;
+}
+
+.ice-pagination {
+  min-height: 60px;
+  margin-top: 45px;
+
+  text-align: right;
+}
+
+.ice-page-item,
+.breadcrumb-item {
+  display: inline-block;
+}
+
+.filters fieldset {
+  display: inline-block;
 }
