@@ -218,7 +218,9 @@
           </section>
         </div>
         <section class="map">
-          <div class="interactive-map"></div>
+          <div class="interactive-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="428" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
           <div class="feedback-wrapper">
             <div class="feedback-panel">
               <h4 class="seo-header">Интерактивная карта</h4> <!-- h4 элемент должен быть скрыт. Нужен для того чтобы не было warning'а от html валидатора -->
@@ -276,7 +278,7 @@
             <div class="htmlacademy-logo">
               <img src="img/htmlacademy-logo.png" alt="HTML Academy" width="108" height="38">
             </div>
-            <span>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</span>
+            <span>Сделано в <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a> © 2017</span>
           </div>
         </div>
       </footer>
@@ -284,7 +286,7 @@
     <div class="feedback-popup-mask">
       <div class="feedback-popup">
         <button class="feedback-popup-close-btn"></button>
-        <form action="#" method="post">
+        <form class="feedback-form" action="#" method="post">
           <fieldset class="feedback-popup-fields">
             <legend class="feedback-popup-welcome">Мы обязательно вам ответим!</legend>
             <input class="feedback-name-line-text" type="text" name="feedback-name-line"  placeholder="Как вас зовут?">
@@ -295,6 +297,6 @@
         </form>
       </div>
     </div>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

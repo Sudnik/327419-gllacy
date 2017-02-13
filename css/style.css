@@ -4,17 +4,69 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
   color: #ffffff;
 
   background-color: #849d8f;
+}
+
+.interactive-map iframe {
+  z-index: 30;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.feedback-popup.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.feedback-popup-mask.modal-content-mask-show {
+  display: block;
+}
+
+.feedback-popup.modal-error {
+  animation: shake 0.6s;
 }
 
 .big-header {
   font-weight: bold;
   font-size: 60px;
   line-height: 60px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
   color: #ffffff;
 }
 
@@ -24,7 +76,7 @@ body {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
   color: #ffffff;
 }
 
@@ -257,8 +309,9 @@ ul.navi {
 
 /* --- BANNERS ----------------------------------------------------- */
 .banners-list {
-  font-size: 0;
   margin-bottom: 40px;
+
+  font-size: 0;
 }
 
 .banner-item.raspberries {
@@ -516,7 +569,7 @@ p.subscribe-description {
 
 .interactive-map {
   min-width: 1200px;
-  min-height: 428px;
+  height: 428px;
   margin: 0 auto;
 
   background: rgba(222, 217, 197, 0.5) url(../img/map.jpg) no-repeat center -110px;
@@ -1031,13 +1084,13 @@ input:checked + label .custom-checkbox {
 .ice-page-item {
   min-width: 26px;
   height: 26px;
+  margin-right: 2px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   color: #ffffff;
-  margin-right: 2px;
 }
 
 .ice-page-item a {
@@ -1073,6 +1126,7 @@ input:checked + label .custom-checkbox {
 
 .ice-pages {
   margin: 0;
+
   font-size: 0;
 }
 /* --- // PAGING --------------------------------------------------- */
@@ -1119,7 +1173,7 @@ input:checked + label .custom-checkbox {
 }
 
 .navi-item.item-selected > a {
-  margin: 0;
+  margin: -4px;
   padding: 6px 12px;
 
   color: #ffffff;
@@ -1359,12 +1413,14 @@ input:checked + label .custom-checkbox {
   left: 50%;
   z-index: 1001;
 
+  display: none;
   width: 480px;
-  min-height: 445px;
+  height: 445px;
 
   background-color: #f8f7f4;
   border-radius: 15px;
-  transform: translate(-50%, -50%);
+  margin-left: -240px;
+  margin-top: -223px;
 }
 
 .feedback-popup form {
@@ -1399,6 +1455,7 @@ input:checked + label .custom-checkbox {
   background: url(../img/cross.svg) no-repeat 0 0;
   border: 0;
   outline: none;
+  cursor: pointer;
 }
 
 .feedback-name-line-text,
@@ -1727,7 +1784,7 @@ input:checked + label .custom-checkbox {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
   color: #323232;
 
   border: 1px solid #c7c6c5;
