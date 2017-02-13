@@ -95,15 +95,15 @@
             <div class="slider-slides">
               <div class="slider-slide-item" id="slide-1">
                 <h1 class="big-header">Крем-брюле и пломбир с малиновым джемом</h1>
-                <a class="slider-button" href="#" class="main-btn big-main-btn">Давайте оба!</a>
+                <a class="slider-button" href="#">Давайте оба!</a>
               </div>
               <div class="slider-slide-item" id="slide-2">
                 <h1 class="big-header">Шоколадный пломбир и лимонный сорбет</h1>
-                <a class="slider-button" href="#" class="main-btn big-main-btn">Давайте оба!</a>
+                <a class="slider-button" href="#">Давайте оба!</a>
               </div>
               <div class="slider-slide-item" id="slide-3">
                 <h1 class="big-header">Пломбир с помадкой и клубничный щербет</h1>
-                <a class="slider-button" href="#" class="main-btn big-main-btn">Давайте оба!</a>
+                <a class="slider-button" href="#">Давайте оба!</a>
               </div>
             </div>
             <div class="slider-control-panel">
@@ -118,14 +118,14 @@
               <h3 class="middle-header">Малинка даром!</h3>
               <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <div class="block-right">
-                <a class="site-action-btn" href="#" class=""><span>Хочу варенье!</span></a>
+                <a class="site-action-btn" href="#"><span>Хочу варенье!</span></a>
               </div>
             </article>
             <article class="banner-item chocolates">
               <h3 class="middle-header">Шоколадки даром!</h3>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшец шоколадной присыпки совершенно бесплатно.</p>
               <div class="block-right">
-                <a class="site-action-btn" href="#" class="main-btn small-main-btn">Хочу шоколадки!</a>
+                <a class="site-action-btn" href="#">Хочу шоколадки!</a>
               </div>
             </article>
           </section>
@@ -218,42 +218,58 @@
           </section>
         </div>
         <section class="map">
-          <div class="interactive-map">
-            <img src="img/map.jpg" alt="Интерактивная карта" width="1200" height="430">
-          </div>
-          <div class="feedback-panel">
-            <h4 class="seo-header">Интерактивная карта</h4> <!-- h4 элемент должен быть скрыт. Нужен для того чтобы не было warning'а от html валидатора -->
-            <p class="feedback-block">
-              Адрес главного офиса и офлайн магазина:
-              <span class="gllacy-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-            </p>
-            <p class="feedback-block">
-              Для заказов по телефону:
-              <span class="gllacy-phone">8 812 450-25-25</span>
-              (с 10 до 20 ежедневно)
-            </p>
-            <p class="feedback-block">
-              <a class="main-btn small-main-btn" href="#">Форма обратной связи</a>
-            </p>
+          <div class="interactive-map"></div>
+          <div class="feedback-wrapper">
+            <div class="feedback-panel">
+              <h4 class="seo-header">Интерактивная карта</h4> <!-- h4 элемент должен быть скрыт. Нужен для того чтобы не было warning'а от html валидатора -->
+              <p class="feedback-block">
+                Адрес главного офиса <br>и офлайн магазина:
+                <span class="gllacy-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+              </p>
+              <p class="feedback-block">
+                Для заказов по телефону:
+                <span class="gllacy-phone">8 812 450-25-25</span>
+                (с 10 до 20 ежедневно)
+              </p>
+              <p class="feedback-block">
+                <a class="site-action-btn feedback-btn" href="#">Форма обратной связи</a>
+              </p>
+            </div>
           </div>
         </section>
       </main>
       <footer class="main-footer">
         <div class="container">
           <div class="footer-social block-left">
-            <a class="social tw" href="https://twitter.com/htmlacademy_ru" target="_blank" title="Twitter">Twitter</a>
-            <a class="social ig" href="https://www.instagram.com/htmlacademy" target="_blank" title="Instagram">Instagram</a>
-            <a class="social fb" href="https://www.facebook.com/htmlacademy" target="_blank" title="Facebook">Facebook</a>
-            <a class="social vk" href="https://vk.com/htmlacademy" target="_blank" title="ВКонтакте">ВКонтакте</a>
+            <a class="social tw" href="https://twitter.com/htmlacademy_ru" target="_blank" title="Twitter"></a>
+            <a class="social ig" href="https://www.instagram.com/htmlacademy" target="_blank" title="Instagram"></a>
+            <a class="social fb" href="https://www.facebook.com/htmlacademy" target="_blank" title="Facebook"></a>
+            <a class="social vk" href="https://vk.com/htmlacademy" target="_blank" title="ВКонтакте"></a>
           </div>
           <div class="footer-links block-center">
             <div class="first-column">
-              <a class="favorite-link" href="#">Для поставщиков</a>
-              <a href="#">О производстве</a>
+              <span>
+                <a class="favorite-link" href="#">
+                  <span class="link-underline">Для поставщиков</span>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <span class="link-underline">О производстве</span>
+                </a>
+              </span>
             </div>
-            <div class="secont-column">
-              <a href="#">Наши документы</a>
-              <a href="#">Экологические стандарты</a>
+            <div class="second-column">
+              <span>
+                <a href="#">
+                  <span class="link-underline">Наши документы</span>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <span class="link-underline">Экологические стандарты</span>
+                </a>
+              </span>
             </div>
           </div>
           <div class="footer-copyright block-right">
@@ -265,17 +281,19 @@
         </div>
       </footer>
     </div>
-    <div class="feedback-popup">
-      <button class="feedback-popup-close-btn"></button>
-      <form action="#" method="post">
-        <fieldset class="feedback-popup-fields">
-          <legend class="feedback-popup-welcome">Мы обязательно вам ответим!</legend>
-          <input type="text" id="feedback-name-line-text" name="feedback-name-line"  placeholder="Как вас зовут?">
-          <input type="email" id="feedback-email-line-text" name="feedback-email-line" placeholder="Ваша почта для ответа?">
-          <textarea id="feedback-body-line-text" name="feedback-body-line" placeholder="Напишите что-нибудь..."></textarea>
-        </fieldset>
-        <button class="main-btn small-main-btn" type="submit">Отправить</button>
-      </form>
+    <div class="feedback-popup-mask">
+      <div class="feedback-popup">
+        <button class="feedback-popup-close-btn"></button>
+        <form action="#" method="post">
+          <fieldset class="feedback-popup-fields">
+            <legend class="feedback-popup-welcome">Мы обязательно вам ответим!</legend>
+            <input class="feedback-name-line-text" type="text" name="feedback-name-line"  placeholder="Как вас зовут?">
+            <input class="feedback-email-line-text" type="email" name="feedback-email-line" placeholder="Ваша почта для ответа?">
+            <textarea id="feedback-body-line-text" name="feedback-body-line" placeholder="Напишите что-нибудь..."></textarea>
+          </fieldset>
+          <button class="site-action-btn send-feedback-btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
     <script src="js/script.min.js"></script>
   </body>

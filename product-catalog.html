@@ -126,7 +126,7 @@
               <li class="breadcrumb-item">
                 <a href="#">Каталог</a>
               </li>
-              <li class="breadcrumb-item">
+              <li class="breadcrumb-item last-breadcrump">
                 Сливочное
               </li>
             </ul>
@@ -138,7 +138,7 @@
           <form class="filters-form" action="#" method="get">
             <fieldset>
               <legend>Сортировка:</legend>
-              <select id="sorting-type-select" name="sorting-type">
+              <select class="sort-type" name="sorting-type">
                 <option value="popular">по популярности</option>
                 <option value="cheap">сначала недорогие</option>
                 <option value="costly">сначала дорогие</option>
@@ -157,36 +157,59 @@
             </fieldset>
             <fieldset>
               <legend>Жирность:</legend>
-              <label>
-                <input type="radio" name="ice-fatness" value="0"> 0%
-              </label>
-              <label>
-                <input type="radio" name="ice-fatness" value="10" checked> 10%
-              </label>
-              <label>
-                <input type="radio" name="ice-fatness" value="30"> 30%
-              </label>
-              <label>
-                <input type="radio" name="ice-fatness" value="100"> выше 30%
-              </label>
+              <div class="filter-radio-wrapper">
+                <input id="percent-0" type="radio" name="ice-fatness" value="0">
+                <label for="percent-0">0%</label>
+                
+                <input id="percent-10" type="radio" name="ice-fatness" value="10" checked>
+                <label for="percent-10">до 10%</label>
+                
+                <input id="percent-30" type="radio" name="ice-fatness" value="30">
+                <label for="percent-30">до 30%</label>
+                
+                <input id="percent-30-max" type="radio" name="ice-fatness" value="100">
+                <label for="percent-30-max">выше 30%</label>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Наполнители:</legend>
-              <label>
-                <input type="checkbox" id="chocolate-check" name="chocolate" checked> шоколадные
-              </label>
-              <label>
-                <input type="checkbox" id="sugar-check" name="sugar" checked> сахарные присыпки
-              </label>
-              <label>
-                <input type="checkbox" id="fruit-check" name="fruit"> фрукты
-              </label>
-              <label>
-                <input type="checkbox" id="syrup-check" name="syrup"> сиропы
-              </label>
-              <label>
-                <input type="checkbox" id="jam-check" name="jam"> джемы
-              </label>
+              <div class="filter-checkbox-wrapper">
+                <input type="checkbox" id="chocolate-check" name="chocolate" checked>
+                <label for="chocolate-check">
+                  <span class="custom-checkbox-wrapper">
+                    <span class="custom-checkbox"></span>
+                  </span>
+                  <span class="caption">шоколадные</span>
+                </label>
+                <input type="checkbox" id="sugar-check" name="sugar" checked>
+                <label for="sugar-check">
+                  <span class="custom-checkbox-wrapper">
+                    <span class="custom-checkbox"></span>
+                  </span>
+                  <span class="caption">сахарные присыпки</span>
+                </label>
+                <input type="checkbox" id="fruit-check" name="fruit">
+                <label for="fruit-check">
+                  <span class="custom-checkbox-wrapper">
+                    <span class="custom-checkbox"></span>
+                  </span>
+                  <span class="caption">фрукты</span>
+                </label>
+                <input type="checkbox" id="syrup-check" name="syrup">
+                <label for="syrup-check">
+                  <span class="custom-checkbox-wrapper">
+                    <span class="custom-checkbox"></span>
+                  </span>
+                  <span class="caption">сиропы</span>
+                </label>
+                <input type="checkbox" id="jam-check" name="jam">
+                <label for="jam-check">
+                  <span class="custom-checkbox-wrapper">
+                    <span class="custom-checkbox"></span>
+                  </span>
+                  <span class="caption">джемы</span>
+                </label>
+              </div>
             </fieldset>
             <button class="white-btn" type="submit">Применить</button>
           </form>
@@ -365,7 +388,7 @@
             </div>
             <nav class="ice-pagination">
               <ul class="ice-pages">
-                <li class="ice-page-item">&#060;</li>
+                <li class="ice-page-item bracket inactive">&#060;</li>
                 <li class="ice-page-item ice-page-item-active">1</li>
                 <li class="ice-page-item ">
                   <a href="#">2</a>
@@ -379,7 +402,7 @@
                 <li class="ice-page-item">
                   <a href="#">5</a>
                 </li>
-                <li class="ice-page-item">
+                <li class="ice-page-item bracket">
                   <a href="#">&#062;</a>
                 </li>
               </ul>
@@ -390,19 +413,35 @@
     <footer class="main-footer">
       <div class="container">
         <div class="footer-social block-left">
-          <a class="social tw" href="https://twitter.com/htmlacademy_ru" target="_blank" title="Twitter">Twitter</a>
-          <a class="social ig" href="https://www.instagram.com/htmlacademy" target="_blank" title="Instagram">Instagram</a>
-          <a class="social fb" href="https://www.facebook.com/htmlacademy" target="_blank" title="Facebook">Facebook</a>
-          <a class="social vk" href="https://vk.com/htmlacademy" target="_blank" title="ВКонтакте">ВКонтакте</a>
+          <a class="social tw" href="https://twitter.com/htmlacademy_ru" target="_blank" title="Twitter"></a>
+          <a class="social ig" href="https://www.instagram.com/htmlacademy" target="_blank" title="Instagram"></a>
+          <a class="social fb" href="https://www.facebook.com/htmlacademy" target="_blank" title="Facebook"></a>
+          <a class="social vk" href="https://vk.com/htmlacademy" target="_blank" title="ВКонтакте"></a>
         </div>
         <div class="footer-links block-center">
           <div class="first-column">
-            <a class="favorite-link" href="#">Для поставщиков</a>
-            <a href="#">О производстве</a>
+            <span>
+              <a class="favorite-link" href="#">
+                <span class="link-underline">Для поставщиков</span>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                <span class="link-underline">О производстве</span>
+              </a>
+            </span>
           </div>
-          <div class="secont-column">
-            <a href="#">Наши документы</a>
-            <a href="#">Экологические стандарты</a>
+          <div class="second-column">
+            <span>
+              <a href="#">
+                <span class="link-underline">Наши документы</span>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                <span class="link-underline">Экологические стандарты</span>
+              </a>
+            </span>
           </div>
         </div>
         <div class="footer-copyright block-right">
