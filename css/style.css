@@ -67,6 +67,7 @@ body {
 }
 
 .main-header {
+  margin-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -78,6 +79,7 @@ header .block-left {
 header .block-right {
   float: right;
   width: 295px;
+  margin-right: 3px;
 
   text-align: right;
 }
@@ -106,14 +108,13 @@ ul.navi {
   min-height: 62px;
 
   font-size: 0;
-  line-height: 62px;
 }
 
 .control-wrapper {
   position: relative;
 
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 10px;
 
   font-weight: 600;
   font-size: 14px;
@@ -205,6 +206,7 @@ ul.navi {
   width: 17px;
   height: 17px;
   margin-right: 8px;
+  margin-left: 1px;
 
   vertical-align: top;
 
@@ -256,20 +258,31 @@ ul.navi {
 /* --- BANNERS ----------------------------------------------------- */
 .banners-list {
   font-size: 0;
+  margin-bottom: 40px;
 }
 
 .banner-item.raspberries {
-  padding: 18px;
+  padding: 18px 18px 23px 18px;
 
   background: #6b2633 url(../img/raspberries.jpg) no-repeat 0 0;
   border-radius: 15px;
 }
 
+.raspberries .site-action-btn {
+  min-width: 135px;
+  margin-right: 3px;
+}
+
 .banner-item.chocolates {
-  padding: 18px;
+  padding: 18px 18px 23px 18px;
 
   background: #41271a url(../img/chocolates.jpg) no-repeat 0 0;
   border-radius: 15px;
+}
+
+.chocolates .site-action-btn {
+  min-width: 160px;
+  margin-right: 3px;
 }
 /* --- // BANNERS -------------------------------------------------- */
 
@@ -298,7 +311,7 @@ ul.navi {
 
 .ice-price {
   position: absolute;
-  bottom: 10px;
+  bottom: 14px;
   left: 0;
 
   font-weight: bold;
@@ -313,7 +326,7 @@ ul.navi {
 }
 
 .ice-description {
-  margin: 15px 0;
+  margin: 7px 0;
 
   font-weight: 500;
   font-size: 16px;
@@ -354,6 +367,7 @@ ul.navi {
 
 .preview-panel {
   display: none;
+  margin-top: 10px;
 
   text-align: center;
 }
@@ -365,8 +379,8 @@ ul.navi {
 
 /* --- SEO --------------------------------------------------------- */
 .seo {
-  margin-top: 40px;
-  padding: 20px 20px 0 20px;
+  max-width: 1105px;
+  padding: 23px 20px 2px 20px;
 
   background: #ddd1b7 url(../img/wafer.jpg) no-repeat center center;
   border-radius: 15px;
@@ -376,8 +390,8 @@ ul.navi {
   position: relative;
 
   margin: 0;
-  margin-bottom: 25px;
-  padding-left: 60px;
+  margin-bottom: 22px;
+  padding-left: 59px;
 
   font-weight: 400;
   color: #323232;
@@ -386,7 +400,7 @@ ul.navi {
 .seo p.ice-pic::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 0;
 
   display: inline-block;
@@ -401,7 +415,7 @@ ul.navi {
 .seo p.leaf-pic::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 0;
 
   display: inline-block;
@@ -416,7 +430,7 @@ ul.navi {
 .seo p.cow-pic::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 0;
 
   display: inline-block;
@@ -431,7 +445,7 @@ ul.navi {
 .seo p.thermo-pic::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 0;
 
   display: inline-block;
@@ -445,7 +459,7 @@ ul.navi {
 
 .seo-main-header h1 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   font-weight: 500;
   font-size: 24px;
@@ -463,8 +477,7 @@ ul.navi {
 }
 
 .news-title {
-  margin: 0;
-  margin-bottom: 10px;
+  margin: -1px 0 4px 0;
 
   font-weight: 500;
   font-size: 16px;
@@ -475,6 +488,7 @@ ul.navi {
 .news-link {
   display: inline-block;
   width: 300px;
+  padding-left: 5px;
 
   font-weight: 700;
   font-size: 24px;
@@ -489,7 +503,7 @@ ul.navi {
 
 p.subscribe-description {
   margin: 0;
-  padding: 10px 10px 35px 0;
+  padding: 13px 10px 35px 0;
 }
 /* --- // NEWS ----------------------------------------------------- */
 
@@ -502,7 +516,7 @@ p.subscribe-description {
 
 .interactive-map {
   min-width: 1200px;
-  min-height: 430px;
+  min-height: 428px;
   margin: 0 auto;
 
   background: rgba(222, 217, 197, 0.5) url(../img/map.jpg) no-repeat center -110px;
@@ -521,12 +535,12 @@ p.subscribe-description {
 
 .feedback-panel {
   position: absolute;
-  top: 65px;
-  right: 25px;
+  top: 62px;
+  right: 30px;
 
   width: 255px;
   height: 245px;
-  padding: 30px 23px;
+  padding: 30px 20px 30px 26px;
 
   color: #323232;
 
@@ -535,12 +549,16 @@ p.subscribe-description {
 }
 
 .feedback-block {
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
+}
+
+.feedback-block.tel {
+  line-height: 22px;
 }
 
 .feedback-block .gllacy-address,
@@ -559,7 +577,7 @@ p.subscribe-description {
   display: inline-block;
   width: 32px;
   height: 32px;
-  margin-right: 10px;
+  margin-right: 8px;
 
   vertical-align: top;
 
@@ -705,7 +723,7 @@ p.subscribe-description {
 }
 
 .filters-form fieldset {
-  margin: 0 15px 0 0;
+  margin: 0 11px 0 0;
   padding: 0;
 
   border: 0;
@@ -787,14 +805,14 @@ p.subscribe-description {
   top: 50%;
   right: 0;
 
-  transform: translate(-75px, -10px);
+  transform: translate(-65px, -10px);
 }
 
 .toggle.max-toggle:hover {
   width: 22px;
   height: 22px;
 
-  transform: translate(-74px, -11px);
+  transform: translate(-64px, -11px);
   cursor: pointer;
 }
 
@@ -829,9 +847,10 @@ p.subscribe-description {
 }
 
 .filter-checkbox-wrapper {
+  width: 685px;
   min-width: 385px;
   height: 35px;
-  padding: 0 15px;
+  padding: 0 10px;
 
   line-height: 35px;
 
@@ -953,7 +972,7 @@ p.subscribe-description {
 }
 
 span.caption {
-  margin: 0 9px;
+  margin: 0 16px 0 5px;
 }
 
 .custom-checkbox-wrapper {
@@ -1018,6 +1037,7 @@ input:checked + label .custom-checkbox {
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+  margin-right: 2px;
 }
 
 .ice-page-item a {
@@ -1053,6 +1073,7 @@ input:checked + label .custom-checkbox {
 
 .ice-pages {
   margin: 0;
+  font-size: 0;
 }
 /* --- // PAGING --------------------------------------------------- */
 
@@ -1064,13 +1085,13 @@ input:checked + label .custom-checkbox {
 }
 
 .navi-item.gllacy-logo {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .navi-item:not(.gllacy-logo) {
   position: relative;
 
-  margin: 5px;
+  margin: 5px 6px;
 }
 
 .navi-item:not(.gllacy-logo) > a {
@@ -1099,7 +1120,7 @@ input:checked + label .custom-checkbox {
 
 .navi-item.item-selected > a {
   margin: 0;
-  padding: 6px 8px;
+  padding: 6px 12px;
 
   color: #ffffff;
 
@@ -1118,7 +1139,7 @@ input:checked + label .custom-checkbox {
   left: -5px;
   z-index: 999;
 
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .navi-item-submenu {
@@ -1216,14 +1237,14 @@ input:checked + label .custom-checkbox {
 .subscribe-blog-wrapper {
   width: 520px;
   height: 180px;
-  padding: 13px;
+  padding: 13px 13px 13px 17px;
 
   background-color: #f8f7f4;
   border-radius: 15px;
 }
 
 .banner-item p {
-  margin: 20px 0 45px 0;
+  margin: 15px 0 45px 0;
 
   font-weight: bold;
   font-size: 18px;
@@ -1251,8 +1272,8 @@ input:checked + label .custom-checkbox {
   display: inline-block;
   width: 270px;
   min-height: 335px;
-  margin-top: 40px;
   margin-right: 19px;
+  margin-bottom: 27px;
 
   vertical-align: top;
 }
@@ -1275,7 +1296,7 @@ input:checked + label .custom-checkbox {
   float: left;
   width: 265px;
   min-height: 38px;
-  margin: 31px 25px 31px 0;
+  margin: 36px 25px 26px 0;
 
   vertical-align: top;
 }
@@ -1283,7 +1304,7 @@ input:checked + label .custom-checkbox {
 .main-footer .block-center {
   display: inline-block;
   width: 570px;
-  margin-top: 30px;
+  margin-top: 35px;
 
   font-size: 0;
   vertical-align: top;
@@ -1302,8 +1323,8 @@ input:checked + label .custom-checkbox {
   display: inline-block;
   width: 120px;
   min-height: 70px;
-  margin: 0 25px 0 0;
-  padding-left: 145px;
+  margin: 0 20px 0 0;
+  padding-left: 130px;
 
   vertical-align: top;
   text-align: left;
@@ -1386,18 +1407,18 @@ input:checked + label .custom-checkbox {
 }
 
 .page-header {
-  margin-top: -20px;
+  margin-top: -22px;
   margin-bottom: 25px;
 }
 
 .filters {
   min-width: 880px;
-  min-height: 170px;
+  margin-bottom: 25px;
 }
 
 .ice-pagination {
-  min-height: 60px;
-  margin-top: 80px;
+  min-height: 55px;
+  margin-top: 44px;
 
   text-align: right;
 }
@@ -1413,7 +1434,7 @@ input:checked + label .custom-checkbox {
 
 .filters fieldset {
   display: inline-block;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 
   vertical-align: top;
 }
@@ -1424,6 +1445,7 @@ input:checked + label .custom-checkbox {
 
   min-width: 32px;
   min-height: 32px;
+  margin-top: 15px;
   padding-top: 0;
   padding-right: 15px;
   padding-bottom: 0;
@@ -1434,6 +1456,10 @@ input:checked + label .custom-checkbox {
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
+}
+
+.control-btn.cart-empty {
+  min-width: 58px;
 }
 
 .search-btn {
@@ -1575,12 +1601,11 @@ input:checked + label .custom-checkbox {
 /* --- HEADER POPUP FORMS ------------------ */
 .control-popup {
   position: absolute;
-  top: 20px;
   right: 0;
   z-index: 999;
 
   display: none;
-  padding-top: 20px;
+  padding-top: 5px;
 
   text-align: left;
 }
@@ -1702,6 +1727,7 @@ input:checked + label .custom-checkbox {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+  font-family: "Roboto", sans-serif;
   color: #323232;
 
   border: 1px solid #c7c6c5;
@@ -1745,7 +1771,7 @@ input:checked + label .custom-checkbox {
 .subscribe-email-line {
   width: 342px;
   height: 14px;
-  margin-right: 14px;
+  margin-right: 8px;
 }
 
 .subscribe-blog .subscribe-email-line:hover,
@@ -1820,11 +1846,13 @@ input:checked + label .custom-checkbox {
 }
 
 .send-btn.site-action-btn {
+  width: 127px;
   height: 45px;
   padding: 10px 18px;
 }
 
 .feedback-btn.site-action-btn {
+  margin-top: 8px;
   padding: 10px 28px;
 }
 
