@@ -8,7 +8,8 @@ var login = popup.querySelector("[name=feedback-name-line]");
 var email = popup.querySelector("[name=feedback-email-line]");
 var message = popup.querySelector("[name=feedback-body-line]");
 
-var storage = localStorage.getItem("login");
+  var storage = localStorage.getItem("login");
+}
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
@@ -34,7 +35,7 @@ form.addEventListener("submit", function(event) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-  } 
+  }
   else {
     localStorage.setItem("login", login.value);
   }
