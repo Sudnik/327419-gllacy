@@ -1,6 +1,4 @@
 .control-popup:not(:hover) input {
-  position: fixed;
-  left: -999px;
 }
 
 body {
