@@ -793,6 +793,7 @@ p.subscribe-description {
   margin: 0;
   padding: 0 15px;
 
+  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -999,6 +1000,7 @@ p.subscribe-description {
   height: 35px;
   margin-top: 22px;
 
+  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1887,6 +1889,7 @@ input:checked + label .custom-checkbox {
   margin: 0;
   padding: 10px 15px;
 
+  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1910,6 +1913,7 @@ input:checked + label .custom-checkbox {
 }
 
 .send-btn.site-action-btn {
+
   width: 127px;
   height: 45px;
   padding: 10px 18px;
