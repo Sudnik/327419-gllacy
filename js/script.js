@@ -8,6 +8,7 @@ var login = popup.querySelector("[name=feedback-name-line]");
 var email = popup.querySelector("[name=feedback-email-line]");
 var message = popup.querySelector("[name=feedback-body-line]");
 
+if(!'undefined'==typeof(window.Storage)) {
   var storage = localStorage.getItem("login");
 }
 

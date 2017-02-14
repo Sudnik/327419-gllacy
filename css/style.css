@@ -1,5 +1,8 @@
+/* при помощи этого селектора можно повесить любые свойства текстовым полям во всплывающих меню хедера
+   какие свойства помогут скрыть мигающий курсор ввода (только в IE и в Edge) текстового поля, когда всплывающее меню скыроль?
 .control-popup:not(:hover) input {
 }
+*/
 
 body {
   min-width: 1200px;
@@ -1723,6 +1726,7 @@ input:checked + label .custom-checkbox {
   border: 0;
   outline: none;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .cart-product-remove-btn::before {
@@ -1735,7 +1739,8 @@ input:checked + label .custom-checkbox {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -125px -5px;
-  transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
 }
 
 .cart-product-item img {
