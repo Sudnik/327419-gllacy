@@ -17,7 +17,10 @@ body {
 }
 
 .interactive-map iframe {
+  height: 428px;
+  width: 100%;
   z-index: 30;
+  border:0
 }
 
 @keyframes bounce {
