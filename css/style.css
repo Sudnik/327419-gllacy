@@ -413,7 +413,7 @@ ul.navi {
 .banner-item.raspberries {
   padding: 18px 18px 23px 18px;
 
-  background: #6b2633 url(../img/raspberries.jpg) no-repeat 0 0;
+  background: #6b2633 url(../img/raspberries.jpg) repeat-y 0 0;
   border-radius: 15px;
 }
 
@@ -425,7 +425,7 @@ ul.navi {
 .banner-item.chocolates {
   padding: 18px 18px 23px 18px;
 
-  background: #41271a url(../img/chocolates.jpg) no-repeat 0 0;
+  background: #41271a url(../img/chocolates.jpg) repeat-y 0 0;
   border-radius: 15px;
 }
 
@@ -531,7 +531,7 @@ ul.navi {
   max-width: 1105px;
   padding: 23px 20px 2px 20px;
 
-  background: #ddd1b7 url(../img/wafer.jpg) no-repeat center center;
+  background: #ddd1b7 url(../img/wafer.jpg) repeat-y center center;
   border-radius: 15px;
 }
 
@@ -1356,7 +1356,6 @@ input:checked + label .custom-checkbox {
 
 .navi-item-submenu {
   width: 145px;
-  height: 171px;
   padding: 0;
 
   list-style-type: none;
