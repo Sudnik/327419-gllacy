@@ -1049,6 +1049,7 @@ p.subscribe-description {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  margin-right: 16px;
 }
 
 .filter-radio-wrapper input:enabled + label::before {
@@ -1147,13 +1148,13 @@ span.caption {
   margin: 0 16px 0 5px;
 }
 
-.custom-checkbox-wrapper {
+.custom-checkbox {
   position: relative;
 
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 1px;
+  margin: 1px 5px 1px 1px;
 
   vertical-align: middle;
 
@@ -1164,12 +1165,13 @@ span.caption {
           transform: translateY(-1px);
 }
 
-.custom-checkbox {
+.custom-checkbox::before {
+  content: "";
   position: absolute;
   top: 6px;
   left: 0;
 
-  display: none;
+  visibility: hidden;
   width: 12px;
   height: 7px;
 
@@ -1180,24 +1182,24 @@ span.caption {
           transform: rotate(-45deg) translateX(4px);
 }
 
-input:enabled + label .custom-checkbox-wrapper:hover,
-input:enabled + label:hover .custom-checkbox-wrapper {
-  margin: 0;
+input:enabled + label .custom-checkbox:hover,
+input:enabled + label:hover .custom-checkbox {
+  margin: 0 4px 0 0;
 
   border: 2px solid #ffffff;
 }
 
-input:disabled + label .custom-checkbox {
+input:disabled + label .custom-checkbox::before {
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
   border-left: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-input:disabled + label .custom-checkbox-wrapper {
+input:disabled + label .custom-checkbox {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-input:checked + label .custom-checkbox {
-  display: inline-block;
+input:checked + label .custom-checkbox::before {
+  visibility: visible;
 
   vertical-align: middle;
 }

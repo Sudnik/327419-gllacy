@@ -5,7 +5,7 @@
     <title>Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header container clearfix">
@@ -185,44 +185,23 @@
               <div class="filter-checkbox-wrapper">
                 <input type="checkbox" id="chocolate-check" name="chocolate" checked>
                 <label for="chocolate-check">
-                  <!-- два элемента span для чекбокса нужны для:
-                       1 - custom-checkbox-wrapper - прямоугольник-обводка для чекбокса, при наведении обводка становится толще, а сама галочка не должна; также обводка видна всегда и не должна скрываться когда чекбокс не отмечен в отличие от внутренней галочки;
-                       2 - custom-checkbox - сама галочка сделана тоже рамками элемента span, но развёрнута на 45 грудусов
-
-                       сделал так, потому что не знаю каким образом можно в :before вставить два тега, необходимых для отрисовки чекбокса
-                  -->
-                  <span class="custom-checkbox-wrapper">
-                    <span class="custom-checkbox"></span>
-                  </span>
-                  <span class="caption">шоколадные</span>
+                  <span class="custom-checkbox"></span>шоколадные
                 </label>
                 <input type="checkbox" id="sugar-check" name="sugar" checked>
                 <label for="sugar-check">
-                  <span class="custom-checkbox-wrapper">
-                    <span class="custom-checkbox"></span>
-                  </span>
-                  <span class="caption">сахарные присыпки</span>
+                  <span class="custom-checkbox"></span>сахарные присыпки
                 </label>
                 <input type="checkbox" id="fruit-check" name="fruit">
                 <label for="fruit-check">
-                  <span class="custom-checkbox-wrapper">
-                    <span class="custom-checkbox"></span>
-                  </span>
-                  <span class="caption">фрукты</span>
+                  <span class="custom-checkbox"></span>фрукты
                 </label>
                 <input type="checkbox" id="syrup-check" name="syrup">
                 <label for="syrup-check">
-                  <span class="custom-checkbox-wrapper">
-                    <span class="custom-checkbox"></span>
-                  </span>
-                  <span class="caption">сиропы</span>
+                  <span class="custom-checkbox"></span>сиропы
                 </label>
                 <input type="checkbox" id="jam-check" name="jam">
                 <label for="jam-check">
-                  <span class="custom-checkbox-wrapper">
-                    <span class="custom-checkbox"></span>
-                  </span>
-                  <span class="caption">джемы</span>
+                  <span class="custom-checkbox"></span>джемы
                 </label>
               </div>
             </fieldset>
