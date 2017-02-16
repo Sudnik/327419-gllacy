@@ -70,31 +70,39 @@ body {
 
 .input-wrapper {
   position: relative;
-  padding-top: 15px;
+
   display: inline-block;
+  padding-top: 15px;
+
+  vertical-align: middle;
 }
 
 .input-label {
   position: absolute;
   top: 0;
   left: 0;
+
+  padding-left: 13px;
+
+  font-weight: 400;
   font-size: 11px;
   line-height: 13px;
-  font-weight: 400;
   color: #000000;
-  padding-left: 13px;
+
   visibility: hidden;
 }
 
 input:not([value=""]) + .input-label,
 textarea:not([value=""]) + .input-label {
   color: #999999;
+
   visibility: visible;
 }
 
 input:focus + label.input-label,
 textarea:focus + label.input-label {
   color: #5b9ddf;
+
   visibility: visible;
 }
 
@@ -186,6 +194,8 @@ ul.navi {
 .gllacy-logo a {
   display: inline-block;
   height: 62px;
+
+  vertical-align: middle;
 }
 
 .gllacy-logo img {
@@ -211,6 +221,7 @@ ul.navi {
   font-weight: 600;
   font-size: 14px;
   line-height: 32px;
+  vertical-align: middle;
 }
 
 /* --- SLIDER ------------------------------------------------------ */
@@ -494,6 +505,8 @@ ul.navi {
   width: 49px;
   height: 49px;
 
+  vertical-align: middle;
+
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -5px -99px;
@@ -508,6 +521,8 @@ ul.navi {
   display: inline-block;
   width: 49px;
   height: 49px;
+
+  vertical-align: middle;
 
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
@@ -524,6 +539,8 @@ ul.navi {
   width: 48px;
   height: 49px;
 
+  vertical-align: middle;
+
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -67px -5px;
@@ -538,6 +555,8 @@ ul.navi {
   display: inline-block;
   width: 48px;
   height: 49px;
+
+  vertical-align: middle;
 
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
@@ -580,6 +599,7 @@ ul.navi {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  vertical-align: middle;
   color: #323232;
 }
 
@@ -739,6 +759,8 @@ p.subscribe-description {
   display: inline-block;
   width: 15px;
   height: 13px;
+
+  vertical-align: middle;
 
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
@@ -1112,6 +1134,8 @@ input:disabled + label .custom-checkbox-wrapper {
 
 input:checked + label .custom-checkbox {
   display: inline-block;
+
+  vertical-align: middle;
 }
 /* --- // FILTERS -------------------------------------------------- */
 
@@ -1203,6 +1227,7 @@ input:checked + label .custom-checkbox {
 
   font-size: 16px;
   line-height: 18px;
+  vertical-align: middle;
 }
 
 .navi-item.gllacy-logo {
@@ -1755,6 +1780,8 @@ input:checked + label .custom-checkbox {
 .cart-control .control-popup-body {
   width: 510px;
   height: 205px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .cart-products-list {
@@ -1976,8 +2003,8 @@ input:checked + label .custom-checkbox {
 .send-btn.site-action-btn {
   width: 127px;
   height: 45px;
-  padding: 10px 18px;
   margin-top: 15px;
+  padding: 10px 18px;
 }
 
 .feedback-btn.site-action-btn {

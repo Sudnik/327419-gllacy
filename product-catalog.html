@@ -185,6 +185,12 @@
               <div class="filter-checkbox-wrapper">
                 <input type="checkbox" id="chocolate-check" name="chocolate" checked>
                 <label for="chocolate-check">
+                  <!-- два элемента span для чекбокса нужны для:
+                       1 - custom-checkbox-wrapper - прямоугольник-обводка для чекбокса, при наведении обводка становится толще, а сама галочка не должна; также обводка видна всегда и не должна скрываться когда чекбокс не отмечен в отличие от внутренней галочки;
+                       2 - custom-checkbox - сама галочка сделана тоже рамками элемента span, но развёрнута на 45 грудусов
+
+                       сделал так, потому что не знаю каким образом можно в :before вставить два тега, необходимых для отрисовки чекбокса
+                  -->
                   <span class="custom-checkbox-wrapper">
                     <span class="custom-checkbox"></span>
                   </span>
