@@ -19,45 +19,96 @@ body {
   border: 0;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70% {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes shake {
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%,
   30%,
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 .feedback-popup.modal-content-show {
   display: block;
 
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+
+          animation: bounce 0.6s;
 }
 
 .feedback-popup-mask.modal-content-mask-show {
@@ -65,7 +116,8 @@ body {
 }
 
 .feedback-popup.modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .input-wrapper {
@@ -233,6 +285,8 @@ ul.navi {
 .slider-wrapper {
   background: #849d8f url(../img/ice-cream-big-1.png) no-repeat top center;
 
+  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
+
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -330,7 +384,6 @@ ul.navi {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
   background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
@@ -338,14 +391,12 @@ ul.navi {
 }
 
 .slider-button:hover {
-  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slider-button:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
@@ -636,7 +687,9 @@ p.subscribe-description {
 
   width: 1200px;
 
-  transform: translatex(-600px);
+  -webkit-transform: translatex(-600px);
+
+          transform: translatex(-600px);
 }
 
 .feedback-panel {
@@ -765,7 +818,8 @@ p.subscribe-description {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -188px -5px;
-  transform: translate(-20px, 4px);
+  -webkit-transform: translate(-20px, 4px);
+          transform: translate(-20px, 4px);
 }
 
 .footer-copyright span,
@@ -899,14 +953,18 @@ p.subscribe-description {
   top: 50%;
   left: 0;
 
-  transform: translate(35px, -10px);
+  -webkit-transform: translate(35px, -10px);
+
+          transform: translate(35px, -10px);
 }
 
 .toggle.min-toggle:hover {
   width: 22px;
   height: 22px;
 
-  transform: translate(34px, -11px);
+  -webkit-transform: translate(34px, -11px);
+
+          transform: translate(34px, -11px);
   cursor: pointer;
 }
 
@@ -914,14 +972,18 @@ p.subscribe-description {
   top: 50%;
   right: 0;
 
-  transform: translate(-65px, -10px);
+  -webkit-transform: translate(-65px, -10px);
+
+          transform: translate(-65px, -10px);
 }
 
 .toggle.max-toggle:hover {
   width: 22px;
   height: 22px;
 
-  transform: translate(-64px, -11px);
+  -webkit-transform: translate(-64px, -11px);
+
+          transform: translate(-64px, -11px);
   cursor: pointer;
 }
 
@@ -1098,7 +1160,8 @@ span.caption {
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 5px;
-  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 .custom-checkbox {
@@ -1113,7 +1176,8 @@ span.caption {
   background-color: transparent;
   border-bottom: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
-  transform: rotate(-45deg) translateX(4px);
+  -webkit-transform: rotate(-45deg) translateX(4px);
+          transform: rotate(-45deg) translateX(4px);
 }
 
 input:enabled + label .custom-checkbox-wrapper:hover,
@@ -1204,7 +1268,8 @@ input:checked + label .custom-checkbox {
 
   border-top: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .bracket-right {
@@ -1218,7 +1283,8 @@ input:checked + label .custom-checkbox {
 
   border-top: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /* --- // PAGING --------------------------------------------------- */
 
@@ -1687,7 +1753,8 @@ input:checked + label .custom-checkbox {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -227px -126px;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .login-label {
@@ -1986,6 +2053,8 @@ input:checked + label .custom-checkbox {
   color: #fefefe;
   text-decoration: none;
 
+  background: -webkit-linear-gradient(bottom, #e74a35, #f26843);
+
   background: linear-gradient(to top, #e74a35, #f26843);
   background-color: #e84d37;
   border: 0;
@@ -2020,11 +2089,13 @@ input:checked + label .custom-checkbox {
 }
 
 .site-action-btn:hover {
+  background: -webkit-linear-gradient(bottom, #ec6f5e, #f58669);
   background: linear-gradient(to top, #ec6f5e, #f58669);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .site-action-btn:active {
+  background: -webkit-linear-gradient(bottom, #e74a35, #f26843);
   background: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: inset 0 1px 2px 0 #ac1000;
 }
