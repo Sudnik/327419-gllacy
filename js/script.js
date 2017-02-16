@@ -8,6 +8,14 @@ var login = popup.querySelector("[name=feedback-name-line]");
 var email = popup.querySelector("[name=feedback-email-line]");
 var message = popup.querySelector("[name=feedback-body-line]");
 
+var textInputSet = document.querySelectorAll("input, textarea");
+
+for (var i = 0; i < textInputSet.length; i++) {
+  textInputSet[i].addEventListener("blur", function(event) {
+    event.target.setAttribute("value", event.target.value);
+  });
+}
+
 if(!('undefined'==typeof(window.Storage))) {
   var storage = localStorage.getItem("login");
 }
@@ -17,6 +25,7 @@ link.addEventListener("click", function(event) {
 
   if (storage) {
     login.value = storage;
+    login.setAttribute("value", storage);
   }
 
   popup.classList.add("modal-content-show");

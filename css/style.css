@@ -4,7 +4,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", "Gadget", sans-serif;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -68,6 +68,36 @@ body {
   animation: shake 0.6s;
 }
 
+.input-wrapper {
+  position: relative;
+  padding-top: 15px;
+  display: inline-block;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #000000;
+  padding-left: 13px;
+  visibility: hidden;
+}
+
+input:not([value=""]) + .input-label,
+textarea:not([value=""]) + .input-label {
+  color: #999999;
+  visibility: visible;
+}
+
+input:focus + label.input-label,
+textarea:focus + label.input-label {
+  color: #5b9ddf;
+  visibility: visible;
+}
+
 .big-header {
   width: 680px;
   margin: 0 auto;
@@ -76,7 +106,7 @@ body {
   font-weight: bold;
   font-size: 60px;
   line-height: 60px;
-  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", "Gadget", sans-serif;
   color: #ffffff;
 }
 
@@ -86,7 +116,7 @@ body {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
-  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", "Gadget", sans-serif;
   color: #ffffff;
 }
 
@@ -560,7 +590,7 @@ ul.navi {
 
 p.subscribe-description {
   margin: 0;
-  padding: 13px 10px 35px 0;
+  padding: 13px 10px 20px 0;
 }
 /* --- // NEWS ----------------------------------------------------- */
 
@@ -794,7 +824,7 @@ p.subscribe-description {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", "Gadget", sans-serif;
   color: #ffffff;
 
   background-color: rgba(248, 247, 244, 0.2);
@@ -1001,7 +1031,7 @@ p.subscribe-description {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", "Gadget", sans-serif;
   vertical-align: top;
   text-align: center;
   color: #ffffff;
@@ -1473,7 +1503,7 @@ input:checked + label .custom-checkbox {
 }
 
 .feedback-popup-welcome {
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 
   font-weight: 500;
   font-size: 24px;
@@ -1497,7 +1527,7 @@ input:checked + label .custom-checkbox {
 
 .feedback-name-line-text,
 .feedback-email-line-text {
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .page-header {
@@ -1705,7 +1735,7 @@ input:checked + label .custom-checkbox {
 }
 
 .control-popup-body {
-  padding: 20px 15px;
+  padding: 5px 15px 35px 15px;
 
   background-color: #f8f7f4;
   border-radius: 5px;
@@ -1824,7 +1854,7 @@ input:checked + label .custom-checkbox {
   font-weight: 700;
   font-size: 14px;
   line-height: 12px;
-  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", "Gadget", sans-serif;
   color: #323232;
 
   border: 1px solid #c7c6c5;
@@ -1881,7 +1911,7 @@ input:checked + label .custom-checkbox {
 .password-line-text {
   width: 225px;
   height: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .control-popup .email-line-text:hover,
@@ -1923,7 +1953,7 @@ input:checked + label .custom-checkbox {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Roboto", "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Roboto", "Arial Black", "Arial Bold", "Gadget", sans-serif;
   vertical-align: top;
   text-align: center;
   color: #fefefe;
@@ -1947,6 +1977,7 @@ input:checked + label .custom-checkbox {
   width: 127px;
   height: 45px;
   padding: 10px 18px;
+  margin-top: 15px;
 }
 
 .feedback-btn.site-action-btn {

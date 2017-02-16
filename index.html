@@ -6,7 +6,7 @@
     <title>Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <input class="hidden-element" type="radio" id="slide-1-btn" name="slider-toggle" checked>
@@ -55,7 +55,10 @@
               </div>
               <div class="control-popup">
                 <form class="control-popup-body" action="#" method="get" id="search-form">
-                  <input class="search-line-text" type="text" name="search-line" placeholder="Что ищем?" autocomplete="off">
+                  <div class="input-wrapper">
+                    <input class="search-line-text" type="text" id="search-line-elem" name="search-line" placeholder="Что ищем?" autocomplete="off" value="">
+                    <label class="input-label" for="search-line-elem">Что ищем?</label>
+                  </div>
                 </form>
               </div>
             </div>
@@ -65,8 +68,14 @@
               </div>
               <div class="control-popup">
                 <form class="control-popup-body" action="#" method="post">
-                  <input class="email-line-text" type="email" name="email-line" placeholder="Электронная почта">
-                  <input class="password-line-text" type="password" name="password-line" placeholder="Пароль">
+                  <div class="input-wrapper">
+                    <input class="email-line-text" type="email" id="email-line-elem" name="email-line" placeholder="Электронная почта" value="">
+                    <label class="input-label" for="email-line-elem">Электронная почта</label>
+                  </div>
+                  <div class="input-wrapper">
+                    <input class="password-line-text" type="password" id="password-line-elem" name="password-line" placeholder="Пароль" value="">
+                    <label class="input-label" for="password-line-elem">Пароль</label>
+                  </div>
                   <div class="login-panel">
                     <div class="login-panel-left">
                       <button class="site-action-btn login-btn" type="submit">Войти</button>
@@ -211,7 +220,10 @@
                 <h4 class="seo-header">Глейси подписка</h4> <!-- h4 элемент должен быть скрыт. Нужен для того чтобы не было warning'а от html валидатора -->
                 <p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form action="#" method="post">
-                  <input class="subscribe-email-line" type="email" name="subscribe-email" placeholder="Электронная почта">
+                  <div class="input-wrapper">
+                    <input class="subscribe-email-line" type="email" id="subscribe-email-elem" name="subscribe-email" placeholder="Электронная почта" value="">
+                    <label class="input-label" for="subscribe-email-elem">Электронная почта</label>
+                  </div>
                   <button class="site-action-btn send-btn" type="submit">Отправить</button>
                 </form>
               </div>
@@ -301,14 +313,23 @@
         <form class="feedback-form" action="/" method="get">
           <fieldset class="feedback-popup-fields">
             <legend class="feedback-popup-welcome">Мы обязательно вам ответим!</legend>
-            <input class="feedback-name-line-text" type="text" name="feedback-name-line"  placeholder="Как вас зовут?">
-            <input class="feedback-email-line-text" type="email" name="feedback-email-line" placeholder="Ваша почта для ответа?">
-            <textarea id="feedback-body-line-text" name="feedback-body-line" placeholder="Напишите что-нибудь..."></textarea>
+            <div class="input-wrapper">
+              <input class="feedback-name-line-text" type="text" id="feedback-name-line-elem" name="feedback-name-line"  placeholder="Как вас зовут?" value="">
+              <label class="input-label" for="feedback-name-line-elem">Как вас зовут?</label>
+            </div>
+            <div class="input-wrapper">
+              <input class="feedback-email-line-text" type="email" id="feedback-email-line-elem" name="feedback-email-line" placeholder="Ваша почта для ответа?" value="">
+              <label class="input-label" for="feedback-email-line-elem">Ваша почта для ответа?</label>
+            </div>
+            <div class="input-wrapper">
+              <textarea class="feedback-body-line-text" id="feedback-body-line-elem" name="feedback-body-line" placeholder="Напишите что-нибудь..." value=""></textarea>
+              <label class="input-label" for="feedback-body-line-elem">Напишите что-нибудь...</label>
+            </div>
           </fieldset>
           <button class="site-action-btn send-feedback-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
