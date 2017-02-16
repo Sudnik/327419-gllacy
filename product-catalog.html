@@ -5,7 +5,7 @@
     <title>Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header container clearfix">
@@ -52,7 +52,10 @@
             </div>
             <div class="control-popup">
               <form class="control-popup-body" action="#" method="get" id="search-form">
-                <input class="search-line-text" type="text" name="search-line" placeholder="Что ищем?" autocomplete="off">
+                <div class="input-wrapper">
+                  <input class="search-line-text" type="text" id="search-line-elem" name="search-line" placeholder="Что ищем?" autocomplete="off" value="">
+                  <label class="input-label" for="search-line-elem">Что ищем?</label>
+                </div>
               </form>
             </div>
           </div>
@@ -62,8 +65,14 @@
             </div>
             <div class="control-popup">
               <form class="control-popup-body" action="#" method="post">
-                <input class="email-line-text" type="email" name="email-line" placeholder="Электронная почта">
-                <input class="password-line-text" type="password" name="password-line" placeholder="Пароль">
+                <div class="input-wrapper">
+                  <input class="email-line-text" type="email" id="email-line-elem" name="email-line" placeholder="Электронная почта" value="">
+                  <label class="input-label" for="email-line-elem">Электронная почта</label>
+                </div>
+                <div class="input-wrapper">
+                  <input class="password-line-text" type="password" id="password-line-elem" name="password-line" placeholder="Пароль" value="">
+                  <label class="input-label" for="password-line-elem">Пароль</label>
+                </div>
                 <div class="login-panel">
                   <div class="login-panel-left">
                     <button class="site-action-btn login-btn" type="submit">Войти</button>
@@ -456,5 +465,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
