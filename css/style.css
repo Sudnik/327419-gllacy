@@ -107,7 +107,6 @@ body {
   display: block;
 
   -webkit-animation: bounce 0.6s;
-
           animation: bounce 0.6s;
 }
 
@@ -286,8 +285,7 @@ ul.navi {
   background: #849d8f url(../img/ice-cream-big-1.png) no-repeat top center;
 
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
-
-  transition: background-image 0.5s ease, background-color 0.5s ease;
+          transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 /* Псевдоэлементы с изображениями нужны только для предзагрузки картинок, чтобы они уже были в кеше в момент переключения слайдов и сразу отображались */
@@ -475,7 +473,8 @@ ul.navi {
 }
 
 .ice-description {
-  margin: 7px 0;
+  margin: 8px 0 0 0;
+  padding-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -497,32 +496,40 @@ ul.navi {
 }
 
 .ice-wrapper {
-  position: absolute;
   top: -5px;
   left: -15px;
 
   width: 267px;
-  padding: 5px 15px 20px 15px;
+  padding: 3px 15px 0 15px;
 
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 .ice-wrapper:hover {
   z-index: 999;
 
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 20px 0 20px -20px rgba(0, 0, 0, 0.4), -20px 0 20px -20px rgba(0, 0, 0, 0.4);
 }
 
 .preview-panel {
   display: none;
-  margin-top: 10px;
+  width: 297px;
 
   text-align: center;
 }
 
 .ice-wrapper:hover .preview-panel {
+  position: absolute;
+  z-index: 999;
+
   display: block;
+  margin-left: -15px;
+  padding-bottom: 15px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 /* --- // ICE-CREAM ------------------------------------------------ */
 
@@ -688,7 +695,6 @@ p.subscribe-description {
   width: 1200px;
 
   -webkit-transform: translatex(-600px);
-
           transform: translatex(-600px);
 }
 
@@ -954,7 +960,6 @@ p.subscribe-description {
   left: 0;
 
   -webkit-transform: translate(35px, -10px);
-
           transform: translate(35px, -10px);
 }
 
@@ -963,7 +968,6 @@ p.subscribe-description {
   height: 22px;
 
   -webkit-transform: translate(34px, -11px);
-
           transform: translate(34px, -11px);
   cursor: pointer;
 }
@@ -973,7 +977,6 @@ p.subscribe-description {
   right: 0;
 
   -webkit-transform: translate(-65px, -10px);
-
           transform: translate(-65px, -10px);
 }
 
@@ -982,7 +985,6 @@ p.subscribe-description {
   height: 22px;
 
   -webkit-transform: translate(-64px, -11px);
-
           transform: translate(-64px, -11px);
   cursor: pointer;
 }
@@ -1045,11 +1047,12 @@ p.subscribe-description {
 }
 
 .filter-checkbox-wrapper label {
+  margin-right: 16px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  margin-right: 16px;
 }
 
 .filter-radio-wrapper input:enabled + label::before {
@@ -1154,7 +1157,7 @@ span.caption {
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 1px 5px 1px 1px;
+  margin: 1px 11px 1px 1px;
 
   vertical-align: middle;
 
@@ -1171,7 +1174,6 @@ span.caption {
   top: 6px;
   left: 0;
 
-  visibility: hidden;
   width: 12px;
   height: 7px;
 
@@ -1180,11 +1182,12 @@ span.caption {
   border-left: 2px solid #ffffff;
   -webkit-transform: rotate(-45deg) translateX(4px);
           transform: rotate(-45deg) translateX(4px);
+  visibility: hidden;
 }
 
 input:enabled + label .custom-checkbox:hover,
 input:enabled + label:hover .custom-checkbox {
-  margin: 0 4px 0 0;
+  margin: 0 10px 0 0;
 
   border: 2px solid #ffffff;
 }
@@ -1199,9 +1202,9 @@ input:disabled + label .custom-checkbox {
 }
 
 input:checked + label .custom-checkbox::before {
-  visibility: visible;
-
   vertical-align: middle;
+
+  visibility: visible;
 }
 /* --- // FILTERS -------------------------------------------------- */
 
@@ -1450,7 +1453,7 @@ input:checked + label .custom-checkbox::before {
 .subscribe-blog-wrapper {
   width: 520px;
   height: 180px;
-  padding: 13px 13px 13px 17px;
+  padding: 13px;
 
   background-color: #f8f7f4;
   border-radius: 15px;
@@ -1479,14 +1482,19 @@ input:checked + label .custom-checkbox::before {
   border-radius: 15px;
 }
 
+.ice-list {
+  width: 1170px;
+  margin-left: -7px;
+}
+
 .ice-item {
   position: relative;
 
   display: inline-block;
-  width: 270px;
   min-height: 335px;
-  margin-right: 19px;
+  margin-top: -3px;
   margin-bottom: 27px;
+  margin-left: -8px;
 
   vertical-align: top;
 }
@@ -2055,8 +2063,7 @@ input:checked + label .custom-checkbox::before {
   text-decoration: none;
 
   background: -webkit-linear-gradient(bottom, #e74a35, #f26843);
-
-  background: linear-gradient(to top, #e74a35, #f26843);
+  background:         linear-gradient(to top, #e74a35, #f26843);
   background-color: #e84d37;
   border: 0;
   border-radius: 23px;
@@ -2091,13 +2098,13 @@ input:checked + label .custom-checkbox::before {
 
 .site-action-btn:hover {
   background: -webkit-linear-gradient(bottom, #ec6f5e, #f58669);
-  background: linear-gradient(to top, #ec6f5e, #f58669);
+  background:         linear-gradient(to top, #ec6f5e, #f58669);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .site-action-btn:active {
   background: -webkit-linear-gradient(bottom, #e74a35, #f26843);
-  background: linear-gradient(to top, #e74a35, #f26843);
+  background:         linear-gradient(to top, #e74a35, #f26843);
   box-shadow: inset 0 1px 2px 0 #ac1000;
 }
 
